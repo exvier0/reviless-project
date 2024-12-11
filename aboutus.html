@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Reviless</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #171719; /* Latar belakang gelap */
+      color: white;
+      margin: 0;
+    }
+
+    /* Header styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #171719;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #433f56; /* Warna logo */
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 200px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #433f56;
+    }
+
+    /* About Us Section */
+    .about-us {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .about-us h1 {
+      font-size: 3rem;
+      color: #433f56; /* Warna teks utama */
+      margin-bottom: 20px;
+    }
+
+    .about-us p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin: 20px 0;
+      color: #d1d1d1; /* Warna teks konten */
+    }
+
+    .about-us img {
+      max-width: 60%;
+      height: auto;
+      margin: 30px 0;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      .about-us img {
+        max-width: 80%;
+      }
+
+      .about-us h1 {
+        font-size: 2rem;
+      }
+
+      .about-us p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Reviless</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="outfit.html">Outfit</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="kritiksaran.html">Kritik dan Saran</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About us Section -->
+  <section class="about-us">
+    <h2>About Us!</h2>
+    <p>Web ini didirikan sebagai bagian dari tugas IMK (Interaksi Manusia dan Komputer). Berikut adalah profil biodata kami:</p>
+    <img src="srl.jpg" alt="Syahrul Wahyu Laksono">
+    <div class="biodata">
+      <p class="biodata-name">Syahrul Wahyu Laksono 23670067</p>
+      <p>Saya berasal dari prodi Teknik Informatika, hobi saya adalah olahraga, dan makanan favorit saya adalah nasi goreng.</p>
+    </div>
+    
+    <!-- Additional Bio -->
+    <div class="biodata">
+      <img src="ande.jpg" alt="Ande Kresna">
+      <p class="biodata-name">Ande Kresna 23670109</p>
+      <p>Saya berasal dari prodi Teknik Informatika, hobi saya adalah tidur, dan makanan favorit saya ayam goreng.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Reviless. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

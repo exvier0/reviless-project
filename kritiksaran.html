@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kritik dan Saran - Reviless</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* General body styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #403d3d;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #596cc3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline-block;
+      margin-right: 30px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+      color: #8482bb;
+    }
+
+    /* Form styles */
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .form-container label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .form-container input,
+    .form-container textarea,
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .form-container textarea {
+      resize: none;
+      height: 150px;
+    }
+
+    .form-container button {
+      background-color: #596cc3;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-container button:hover {
+      background-color: #8482bb;
+    }
+
+    /* Footer styles */
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .form-container {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Reviless</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="outfit.html">Outfit</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="kritiksaran.html">Kritik dan Saran</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Kritik dan Saran</h2>
+    <div class="form-container">
+      <form action="submit_saran.html" method="POST">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" placeholder="Tuliskan kritik dan saran Anda di sini..." required></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Reviless. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
